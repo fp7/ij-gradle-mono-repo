@@ -1,7 +1,7 @@
 # Repro parallel model fetching
 
-To reproduce, import into intellij enable gradle parallel model fetching.
-It is a race condition, so it sometimes succeeds. In that case, delete `.intellijPlatform/localPlatformArtifacts` and reimport into intellij.
+To reproduce, run `./gradlew :plugin1:dependencies :plugin2:dependencies`
+It is a race condition, so it sometimes succeeds. In that case, delete `.intellijPlatform/localPlatformArtifacts` and re-run.
 
 After a few tries it should fail with 
 

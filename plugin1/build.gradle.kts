@@ -14,8 +14,6 @@ dependencies {
     intellijPlatform {
         intellijIdeaCommunity("2025.1")
         bundledPlugin("com.intellij.java")
-        bundledPlugin("org.jetbrains.kotlin")
-        bundledPlugin("com.intellij.modules.json")
     }
 }
 
